@@ -1,0 +1,108 @@
+{
+  "display": {
+    "key": {
+      "width": 8,
+    },
+    "size": {
+      "binaryPrefix": "jedec",
+    },
+    "separator": "",
+  },
+  "logo": {
+    "type": "file",
+    "source": "~/.config/fastfetch/goldMask.txt",
+    "color": {
+      "1": "yellow",
+      "2": "red",
+    },
+  },
+  "modules": [
+    {
+      "type": "host",
+      "key": "HO",
+      "keyColor": "#CBA6F7",
+      "format": "{name}",
+    },
+    {
+      "type": "os",
+      "key": "OS",
+      "keyColor": "#CBA6F7",
+      "format": "{name}",
+    },
+    {
+      "type": "kernel",
+      "key": "KRN",
+      "keyColor": "#CBA6F7",
+    },
+    "break",
+    {
+      "type": "packages",
+      "key": "PKG",
+      "keyColor": "#F9E2AF",
+    },
+    "break",
+    {
+      "type": "command",
+      "key": "SH",
+      "keyColor": "#F5C2E7",
+      "text": "basename $SHELL",
+      "format": "{}",
+    },
+    {
+      "type": "terminal",
+      "key": "TERM",
+      "keyColor": "#f5c2e7",
+      "format": "{pretty-name}",
+    },
+    {
+      "type": "terminalfont",
+      "key": "FONT",
+      "keyColor": "#f5c2e7",
+    },
+    "break",
+    {
+      "type": "uptime",
+      "key": "UP",
+      "keyColor": "#FAB387",
+    },
+    "break",
+    {
+      "type": "cpu",
+      "key": "CPU",
+      "keyColor": "#CBA6F7",
+      "format": "{name}",
+    },
+    {
+      "type": "gpu",
+      "key": "GPU",
+      "keyColor": "#CBA6F7",
+      "format": "{name}",
+    },
+    "break",
+    {
+      "type": "memory",
+      "key": "RAM",
+      "keyColor": "#94E2D5",
+      "format": "  {used} | {total}",
+    },
+    {
+      "type": "disk",
+      "key": "DISK",
+      "keyColor": "#74C7EC",
+      "folders": ["/"],
+      "format": "{size-used} | {size-total}",
+    },
+    "break",
+    {
+      "type": "command",
+      "key": "SXNG",
+      "keyColor": "#CBA6F7",
+      "text": "sh -c 'docker ps --filter name=searxng-core --format \"{{.Status}}\" | grep -q Up && echo \"running | $(docker port searxng-core | tr \"\\n\" \" \")\" || echo stopped'",
+      "format": "{}",
+    },
+    {
+      "type": "custom",
+      "format": "",
+    },
+  ],
+}

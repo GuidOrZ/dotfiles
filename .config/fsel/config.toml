@@ -1,0 +1,13 @@
+highlight_color = "Magenta"
+cursor = "█"
+
+pin_color = "Magenta"
+pin_icon = "!"
+
+[app_launcher]
+filter_desktop = true
+filter_actions = false
+list_executables_in_path = false
+match_mode = "fuzzy"
+ranking_mode = "frecency"
+pinned_order = "ranking"
