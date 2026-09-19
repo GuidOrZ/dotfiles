@@ -1,0 +1,11 @@
+[init]
+    defaultBranch = main
+[commit]
+    verbose = true
+[status]
+    relativePath = true
+[alias]
+    author = log --author
+[include]
+    # local user config
+    path = ~/.gitconfig-local
