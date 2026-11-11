@@ -7,7 +7,7 @@ My sway config.
 - tmux
 - kitty
 - fastfetch
-- i3status-ruts
+- i3status-rust
 - fsel
 
 ---

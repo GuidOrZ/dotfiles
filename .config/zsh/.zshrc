@@ -42,3 +42,9 @@ compinit -d "$XDG_CACHE_HOME/zsh/zshmpdump"
 
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
+# --- Nix
+export NIX_PATH="nixpkgs=$HOME/.nix-defexpr/channels/nixpkgs"
+
+# --- Rust
+export PATH="$HOME/.cargo/bin:$PATH"
