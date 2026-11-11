@@ -25,7 +25,24 @@ Install:
 - Creates missing parent directories.
 - Never overwrites anything, skipped targets are reported (if a file already exists at target, just move or delete it).
 
+## Git
+
+[`.gitconfig`](./.gitconfig#L11) includes a second file that is not in the repo (`~/.gitconfig-local`).
+
+This keeps personal or machine-specific settings out of version control.
+
+If you want to use local settings, create `~/.gitconfig-local` yourself.
+
+For example:
+
+```ini
+[user]
+    name = Your Name
+    email = you@example.com
+```
+
 ## Requirements:
+
 - sway
 - zsh
 - tmux
